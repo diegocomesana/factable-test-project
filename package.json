@@ -6,7 +6,9 @@
   "scripts": {
     "build": "babel -d ./build ./src",
     "start": "node ./build",
-    "dev": "babel-node ./src"
+    "dev": "babel-node ./src",
+    "build:factable": "cross-env FACTABLE_TRANSPILE=on babel -d ./build ./src",
+    "dev:factable": "cross-env FACTABLE_TRANSPILE=on babel-node ./src"
   },
   "repository": {
     "type": "git",
