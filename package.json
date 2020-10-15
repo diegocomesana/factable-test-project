@@ -27,7 +27,6 @@
     "@babel/node": "^7.10.5",
     "@babel/preset-env": "^7.11.5",
     "cross-env": "^7.0.2",
-    "factable": "^1.0.0-alpha.2",
     "mime": "^2.4.6"
   },
   "dependencies": {}
