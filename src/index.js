@@ -3,6 +3,7 @@ import {
   arrayElementsWrapper,
   applier,
   someConstant,
+  destructuredProps,
 } from "./common";
 
 console.log("running factable-test-project - ", someConstant);
@@ -38,6 +39,11 @@ const selfExecuting = (function () {
   console.log(
     "elements2WrappedTd: ",
     arrayOfElementsToString(elements2WrappedTd, "ROOT")
+  );
+
+  console.log(
+    "destructuredProps:",
+    destructuredProps({ foo: "fooovalue", bar: "foooobar" })
   );
 
   return true;

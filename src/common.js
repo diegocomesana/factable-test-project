@@ -17,3 +17,7 @@ export const applier = (toApply) => {
     return toApply(elem);
   };
 };
+
+export const destructuredProps = ({ foo, bar }) => {
+  return foo + bar;
+};
