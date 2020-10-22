@@ -3,5 +3,8 @@
         [
             "@babel/preset-env"
         ]
+    ],
+    "plugins": [
+        "module:factable"
     ]
 }

@@ -43,7 +43,7 @@ const selfExecuting = (function () {
 
   console.log(
     "destructuredProps:",
-    destructuredProps({ foo: "fooovalue", bar: "foooobar" })
+    destructuredProps({ foo: "fooovalue", bar: "foooobar" })("it works")
   );
 
   return true;

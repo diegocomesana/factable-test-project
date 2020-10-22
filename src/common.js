@@ -18,6 +18,8 @@ export const applier = (toApply) => {
   };
 };
 
-export const destructuredProps = ({ foo, bar }) => {
-  return foo + bar;
+export const destructuredProps = ({ foo, bar }, vamos = "yeahh") => (
+  meGusta
+) => {
+  return foo + bar + vamos + meGusta;
 };
