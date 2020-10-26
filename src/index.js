@@ -7,6 +7,8 @@ import {
 } from "./common";
 
 import { contentLoader } from "./utils";
+import { salida } from "./other";
+import TestClass from "./test-class";
 
 console.log("running factable-test-project - ", someConstant);
 
@@ -78,3 +80,12 @@ console.log("selfExecuting result: ", selfExecuting);
 
 console.log(contentLoader({ content: "diego content", loading: false }));
 console.log(contentLoader({ content: "should never be seen", loading: true }));
+
+console.log(salida.primeraFunc("lalala"));
+console.log(salida.primeraFunc("lololo"));
+console.log(salida.segundaFunc("yeahhh"));
+
+const instance = new TestClass(22, 33);
+
+console.log(instance.getValues("foooo"));
+console.log(instance.getValues("barrr"));

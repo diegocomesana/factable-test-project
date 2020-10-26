@@ -1,6 +1,6 @@
 // FACTABLE
 
-export const destructuredProps = ({ loading, content }) => {
+export const contentLoader = ({ loading, content }) => {
   return `${loading ? "loading..." : content}`;
 };
 
