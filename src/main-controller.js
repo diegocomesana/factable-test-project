@@ -1,3 +1,5 @@
+// FACTABLE
+
 import {
   arrayOfElementsToString,
   arrayElementsWrapper,
@@ -14,7 +16,7 @@ export const setDependencies = () => {
   return {};
 };
 
-export const execute = async (context) => {
+export const execute = (context) => {
   const { setResponseElement, getResponseState, req } = context;
 
   const tagFamilia = req.query.fa || "FAMILIA";
@@ -114,6 +116,12 @@ export const execute = async (context) => {
   setResponseElement("value", instance.getValues("barrr"));
 
   //   throw new Error("la re puta madreeeee"); // ends in 500
+
+  //   return new Promise((resolve) => {
+  //     setTimeout(() => {
+  //       resolve(getResponseState());
+  //     }, 3000);
+  //   });
 
   return getResponseState();
 };

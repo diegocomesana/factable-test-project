@@ -48,7 +48,7 @@ export const applyController = ({ execute, setDependencies }) => {
   const middleware = (req, res) => {
     const context = buildRequestContext(req, res, dependencies);
 
-    return execute(context)
+    return Promise.resolve(execute(context))
       .then((controllerOutput) => {
         if (controllerOutput === undefined) {
           res.status(404).send();
