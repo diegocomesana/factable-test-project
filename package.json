@@ -10,7 +10,7 @@
     "test": "jest --collectCoverage ./src",
     "build:factable": "cross-env FACTABLE_TRANSPILE=8888 babel -d ./build ./src",
     "dev:factable": "cross-env FACTABLE_TRANSPILE=8888 babel-node ./src",
-    "factable": "cross-env FACTABLE_DEV=true factable-server-run 8888"
+    "factable": "factable-server-run 8888"
   },
   "repository": {
     "type": "git",
